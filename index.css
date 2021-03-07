@@ -1,0 +1,31 @@
+:root {
+    --squareNum: 16;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    grid-template-columns: repeat(var(--squareNum), auto);
+    grid-template-rows: repeat(var(--squareNum), auto);
+}
+
+#clear-button {
+    cursor: pointer;
+}
+
+.square {
+    border: 1px solid black;
+}
+
+.square:hover {
+    background-color: aqua;
+}
